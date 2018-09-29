@@ -3,14 +3,10 @@ import TodoList from './TodoList'
 import logo from './logo.svg';
 import './App.css';
 
-const Message = ({message})=> {
-  return(
-  (message)?  <div>{message}</div> : (<div> no meesage</div>)
-  )
-}
+
 const items = [
   {
-      id: 2,
+      id: 1,
       description: 'get out of bed',
       done: 'true'
   },
@@ -33,9 +29,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <TodoList items={items}/>
         </header>
-        <p className="App-intro">
-         <Message message={null} />
-        </p>
+        
       </div>
     );
   }
