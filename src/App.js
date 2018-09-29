@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoList from './TodoList'
+import TodoList from './TodoList';
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,9 +27,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <TodoList items={items}/>
+          
         </header>
-        
+        <TodoList items={items}/>
       </div>
     );
   }

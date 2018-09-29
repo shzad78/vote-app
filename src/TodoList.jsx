@@ -1,4 +1,6 @@
 import React from 'react';
+import TodoItem from './TodoItem';
+
 
 
  const TodoList = (props)=>{
@@ -6,7 +8,15 @@ import React from 'react';
     console.log(props.items[0].id);
   
     return (
-      <ul></ul>
+        <ul>
+            {props.items.map(item=>(
+                
+                <TodoItem key={item.id} text={item.description} done= {item.done} />
+            ))
+
+            }
+        </ul>
+      
     )
   
 }
