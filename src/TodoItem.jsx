@@ -7,8 +7,9 @@ import React from 'react'
   return (
     <div>
     <li>
-    Name: {props.text} <br/>
-    Description: {props.decsciption}
+    <input type="checkbox" checked = {true}/>
+    <span> Name: {props.text} </span><br/>
+    <span>Description: {props.decsciption}</span>
     </li>
     </div>
   )
